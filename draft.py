@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-import dash_bootstrap_components as dbc
+#import dash_bootstrap_components as dbc
 from dash import Dash, html, Input, Output, ctx
 
 df = pd.read_csv('Instagram_Acc_Data.csv',header = 0)
