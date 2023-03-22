@@ -9,7 +9,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
-df = pd.read_csv('Instagram_Acc_Data.csv',header = 0)
+df = pd.read_csv('Instagram_Acc_Data.csv', header=0)
 X = df.drop(columns='fake')
 y = df['fake']
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.20,random_state=0,stratify=y)
